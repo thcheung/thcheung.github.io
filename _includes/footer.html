@@ -1,0 +1,49 @@
+{% include base_path %}
+
+<div class="page__footer-follow">
+    <ul class="social-icons">
+        {% if site.data.ui-text[site.locale].follow_label %}
+            <li>
+                <strong>{{ site.data.ui-text[site.locale].follow_label }}</strong>
+            </li>
+        {% endif %}
+        {% if site.twitter.username %}
+            <li>
+                <a href="https://twitter.com/{{ site.twitter.username }}">
+                    <i aria-hidden="true" class="fab fa-twitter-square"></i>
+                    Twitter</a>
+            </li>
+        {% endif %}
+        {% if site.facebook.username %}
+            <li>
+                <a href="https://facebook.com/{{ site.facebook.username }}">
+                    <i aria-hidden="true" class="fab fa-facebook-square"></i>
+                    Facebook</a>
+            </li>
+        {% endif %}
+        {% if site.author.github %}
+            <li>
+                <a href="http://github.com/{{ site.author.github }}">
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                    GitHub</a>
+            </li>
+        {% endif %}
+        {% if site.author.bitbucket %}
+            <li>
+                <a href="http://bitbucket.org/{{ site.author.bitbucket }}">
+                    <i aria-hidden="true" class="fab fa-bitbucket"></i>
+                    Bitbucket</a>
+            </li>
+        {% endif %}
+        <li>
+            <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">
+                <i aria-hidden="true" class="fa fa-fw fa-rss-square"></i>
+                {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a>
+        </li>
+    </ul>
+</div>
+
+<div class="page__footer-copyright">&copy;
+    {{ site.time | date: '%Y' }}
+    {{ site.name | default: site.title }}.
+</div>
