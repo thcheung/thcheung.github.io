@@ -11,7 +11,7 @@ title: 'CHEUNG Tsun Hin'
 title_separator: '-'
 name: 'CHEUNG Tsun Hin'
 description: 'A full stack developer and PhD Candidate at PolyU'
-url: www.tsunhincheung.com
+url: https://www.tsunhincheung.com
 baseurl: ''
 repository: 'thcheung/thcheung.github.io'
 breadcrumbs: false # true, false (default)
