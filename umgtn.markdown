@@ -5,7 +5,7 @@
 layout: project
 title: "Unifying Multimodal Source and Proportional Graph for Rumour Detection on Social Media with Missing Features"
 tagline: "Tsun-Hin Cheung, Kin-Man Lam"
-git_url: https://github.com/thcheung/UMG
+git_url: https://github.com/thcheung/UMGTN
 ---
 
 ## Abstract
