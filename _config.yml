@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Tsun-Hin Cheung
-email: me@cheungsunny.com
+email: tsun-hin.cheung@connect.polyu.hk
 description: >- # this means to ignore newlines until "baseurl:"
    Hi, I am Tsun-Hin Cheung, currently a research student working on Natural Language Processing and Data Mining, specifically on Social Media Analytics.
 baseurl: "" # the subpath of your site, e.g. /blog
