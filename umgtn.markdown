@@ -14,7 +14,7 @@ With the rapid development of online social media platforms, the spread of rumou
 
 ## Codes
 
-Codes will be released soon.
+Codes will be released once the paper is accepted.
 
 ## Datasets
 
