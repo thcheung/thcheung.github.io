@@ -24,11 +24,13 @@ description: >- # this means to ignore newlines until "baseurl:"
    Hi, I am Tsun-Hin Cheung, currently a research student working on Natural Language Processing and Data Mining, specifically on Social Media Analytics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/thcheung" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thscheung
+# twitter_username: thscheung
 github_username:  thcheung
 
 # Build settings
 theme: minima
+
+permalink: pretty
 # plugins:
 #   - jekyll-feed
 
