@@ -1,0 +1,27 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+Hi, I am **Tsun-Hin Cheung**👋 . I am currently a research student from The Hong Kong Polytechnic University. My research interests include Natural Language Processing (NLP), Deep Learning and Web Data Mininig, specifically on Social Media Analytics. Besides, I am a full-stack Developer with hands-on experiences on web data crawling, web and mobile App development and database management.
+
+------
+
+## My Tech Stack
+
+- **Frontend** : React, React Native
+
+- **Backend** : Express.js, Flask
+
+- **Databases**  : MySQL, MongoDB, Neo4j
+
+- **Data Crawling** : Scrapy, Beautifulsoup
+
+- **Machine Learning Framework** : PyTorch, Huggingface, Pytorch Geometric
+
+- **Cloud Services** : AWS, Google Cloud Platform
+
+------
+
