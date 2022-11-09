@@ -14,7 +14,7 @@ With the rapid development of online social media platforms, the spread of rumou
 
 ## Codes
 
-The Pretrained Model and Checkpoint can be found at the [Github Repo](https://github.com/thcheung/UMGTN)
+Pretrained Model and Checkpoint can be found at the [Github Repo](https://github.com/thcheung/UMGTN)
 
 ## Datasets
 
