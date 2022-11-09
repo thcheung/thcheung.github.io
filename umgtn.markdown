@@ -14,7 +14,7 @@ With the rapid development of online social media platforms, the spread of rumou
 
 ## Codes
 
-Codes will be released once the paper is accepted.
+The Pretrained Model can be found at the [Github Repo](https://github.com/thcheung/UMGTN)
 
 ## Datasets
 
