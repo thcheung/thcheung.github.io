@@ -14,11 +14,11 @@ With the rapid development of online social media platforms, the spread of rumou
 
 ## Codes
 
-The Pretrained Model can be found at the [Github Repo](https://github.com/thcheung/UMGTN)
+The Pretrained Model and Checkpoint can be found at the [Github Repo](https://github.com/thcheung/UMGTN)
 
 ## Datasets
 
-The full datasets can be downloaded below. The password will be provided once the paper is accepted.
+Full datasets can be downloaded below. Password will be provided once the paper is accepted.
 
 - [PHEME Dataset](https://connectpolyu-my.sharepoint.com/:u:/g/personal/15083269d_connect_polyu_hk/EWMDKoZhXfNBsjZy0IHwss0B50OhrxctkUWbAiOpq3cuXQ?e=XcTKgo)
 
