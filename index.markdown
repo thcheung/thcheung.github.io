@@ -5,7 +5,7 @@
 layout: home
 ---
 
-Hi, I am **Tsun-Hin Cheung**👋 . I am currently a research student from The Hong Kong Polytechnic University. My research interests include Natural Language Processing (NLP), Deep Learning and Web Data Mininig, specifically on Social Media Analytics. Besides, I am a full-stack Developer with hands-on experiences on web data crawling, web and mobile App development and database management.
+Hi, I am **Tsun-Hin Cheung**👋. I am currently a PhD student from The Hong Kong Polytechnic University. My research interests include Natural Language Processing (NLP), Deep Learning and Web Data Mininig, specifically on Social Media Analytics. Besides, I am a full-stack developer with hands-on experiences on web data crawling, web and mobile app development and large-scale database management.
 
 ------
 
