@@ -5,7 +5,7 @@
 layout: project
 title: "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking"
 tagline: "Tsun-Hin Cheung, Kin-Man Lam"
-git_url: https://github.com/thcheung/FactLLaMA
+git_url: https://github.com/thcheung/factllama
 ---
 
 ## Abstract
