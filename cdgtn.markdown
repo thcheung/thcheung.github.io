@@ -20,4 +20,8 @@ Pretrained Model and Checkpoint can be found at the [Github Repo](https://github
 The extended CR-Twitter can be downloaded below. Password is: CDGTN2023.
 
 - [Extended CR-Twitter Dataset](https://connectpolyu-my.sharepoint.com/:u:/g/personal/15083269d_connect_polyu_hk/EdUFxIS-Ea9Igvk6ddku93wBxPYSehGT3OWAb3Y00J42Yw?e=BhWfgT)
+
 ## Model Checkpoints
+
+The model checkpoints can be found in the releases [here](https://github.com/thcheung/CDGTN/releases/tag/checkpoint).
+
