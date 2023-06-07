@@ -17,8 +17,7 @@ The growth in social media has led to the increasing spread of unverified or fal
 Pretrained Model and Checkpoint can be found at the [Github Repo](https://github.com/thcheung/CDGTN).
 
 ## Datasets
+The extended CR-Twitter can be downloaded below. Password is: CDGTN2023.
 
-The extended CR-Twitter can be downloaded below.
-
-- [Extended CR-Twitter Dataset](https://connectpolyu-my.sharepoint.com/:u:/g/personal/15083269d_connect_polyu_hk/ERlY9X3CA45MgSRsMSthreIB6KT1Cn7sNyEwQAHFJMsbWQ?e=isc9mG)
-
+- [Extended CR-Twitter Dataset](https://connectpolyu-my.sharepoint.com/:u:/g/personal/15083269d_connect_polyu_hk/EdUFxIS-Ea9Igvk6ddku93wBxPYSehGT3OWAb3Y00J42Yw?e=BhWfgT)
+## Model Checkpoints
