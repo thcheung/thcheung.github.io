@@ -17,4 +17,6 @@ Pretrained Model and Checkpoint can be found at the [Github Repo](https://github
 
 ## Datasets
 
-Coming Soon.
+The datasets can be downloaded below..
+
+- [AARD Dataset](https://connectpolyu-my.sharepoint.com//:u:/r/personal/19104564r_connect_polyu_hk/Documents/AARD_dataset.zip?csf=1&web=1&e=js0NRv)
