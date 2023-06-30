@@ -27,11 +27,11 @@ Hi, I am **Tsun-Hin Cheung**👋. I am currently a PhD student from The Hong Kon
 
 ## Development Projects
 
-- A Social Media Tagging System for Data Annotation (2019)
+- **A Social Media Tagging System for Data Annotation (2019)**
 
 ![](assets/t1.PNG?raw=true)
 
-- A Local News Mobile Apps with AI technology (2020)
+- **A Local News Mobile Apps with AI technology (2020)**
 
 ![](assets/a1.PNG?raw=true)
 
