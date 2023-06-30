@@ -25,3 +25,13 @@ Hi, I am **Tsun-Hin Cheung**👋. I am currently a PhD student from The Hong Kon
 
 ------
 
+## Development Projects
+
+- A Local News Mobile Apps with AI technology
+
+![](assets/a1.png?raw=true)
+![](assets/a2.png?raw=true)
+
+------
+
+
