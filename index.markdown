@@ -25,7 +25,7 @@ Hi, I am **Tsun-Hin Cheung**👋. I am currently a PhD student from The Hong Kon
 
 ------
 
-<!-- ## Development Projects
+## Development Projects
 
 - **A Facial Image Super-Resolution System with Cross-Platform Desktop GUI (2018)**
 
@@ -41,4 +41,4 @@ Hi, I am **Tsun-Hin Cheung**👋. I am currently a PhD student from The Hong Kon
 
 ------
 
- -->
+
