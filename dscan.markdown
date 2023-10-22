@@ -19,6 +19,7 @@ The codes can be found at the [Github Repo](https://github.com/thcheung/DSCAN).
 
 The extended PHEME and RumourEval can be downloaded below. Password will be provided once the paper has been accepted.
 
-- [Extended PHEME Dataset](https://connectpolyu-my.sharepoint.com/:u:/g/personal/15083269d_connect_polyu_hk/)
+- [PHEME Dataset](https://figshare.com/articles/dataset/PHEME_dataset_for_Rumour_Detection_and_Veracity_Classification/6392078)
 
-- [Extended RumourEval Dataset](https://connectpolyu-my.sharepoint.com/:u:/g/personal/15083269d_connect_polyu_hk/)
+- [RumourEval Dataset](https://figshare.com/articles/dataset/RumourEval_2019_data/8845580)
+
