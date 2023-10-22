@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: project
-title: "Simultaneous Rumour and Malicious Account Detection on Social Media"
+title: "Author-Aware Rumour Detection with Layer-Wise Parameter-Efficient Tuning and Incomplete Feature Learning"
 tagline: "Tsun-Hin Cheung, Kin-Man Lam"
 git_url: https://github.com/thcheung/aard
 ---
