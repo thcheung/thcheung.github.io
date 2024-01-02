@@ -21,7 +21,7 @@
 title: Tsun-Hin Cheung
 email: tsun-hin.cheung@connect.polyu.hk
 description: >- # this means to ignore newlines until "baseurl:"
-   Hi, I am Tsun-Hin Cheung, currently a research student working on Deep Learning, Natural Language Processing, and Social Computing.
+   Hi, I am Tsun-Hin Cheung, currently a fresh PhD graduate working on Deep Learning, Natural Language Processing, and Social Computing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/thcheung" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: thscheung
