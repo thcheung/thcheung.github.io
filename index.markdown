@@ -5,7 +5,7 @@
 layout: home
 ---
 
-Hi, I am **Tsun-Hin Cheung**👋. I am currently a PhD student from The Hong Kong Polytechnic University. My research interests include Deep Learning, Natural Language Processing, and Social Computing, specifically on misinformation detection on social media. Besides, I am a full-stack developer with hands-on experiences on web data mining, web and mobile app development, and large-scale database management.
+Hi, I am **Tsun-Hin Cheung**👋. I am a fresh PhD graduate from The Hong Kong Polytechnic University. My research interests include Deep Learning, Natural Language Processing, and Social Computing, specifically on misinformation detection on social media. Besides, I am a full-stack developer with hands-on experiences on web data mining, web and mobile app development, and large-scale database management.
 
 ------
 
