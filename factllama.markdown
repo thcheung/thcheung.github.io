@@ -24,3 +24,7 @@ Pretrained Model and Checkpoint can be found at the [Github Repo](https://github
 ## Datasets
 
 The raw datasets can be downloaded at [CofCED](https://github.com/Nicozwy/CofCED).
+
+## Checkpoints
+
+The LORA weights can be downloaded at [here](https://connectpolyu-my.sharepoint.com/:u:/g/personal/19104564r_connect_polyu_hk/EUaNsh5QMjhBtnQsjj4Cd2YBZ5sKBmTkRMmVCQUaK1XQPw?e=i26g5K).
