@@ -5,10 +5,10 @@
 layout: home
 ---
 
-Hello, I'm **Tsun-Hin Cheung**👋, a full-stack developer and researcher. I hold a PhD degree in Electrical and Electronic Engineering from The Hong Kong Polytechnic University, specializing in deep learning and big data analysis. My research interests revolve around Deep Learning, Natural Language Processing, and Social Computing, with a particular focus on misinformation detection on social media. Over the past 5+ years, I have built a strong foundation in AI and machine learning, with practical experience in developing machine learning algorithms, including applications such as social media monitoring and chatbot development.
+Hello, I'm **Tsun-Hin Cheung** 👋, currently a Postdoctoral Fellow in the Centre for Advances in Reliability and Safety, Hong Kong. My research interests include multimodal AI, AI Agents, and Large Language Models (LLMs). I received my PhD degree in Electrical and Electronic Engineering from The Hong Kong Polytechnic University.
 
 ------
-
+<!-- 
 ## My Tech Stack
 
 - **Frontend** : React, React Native
@@ -23,6 +23,6 @@ Hello, I'm **Tsun-Hin Cheung**👋, a full-stack developer and researcher. I hol
 
 - **Cloud Services** : AWS, Google Cloud Platform
 
-------
+------ -->
 
 
