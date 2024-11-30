@@ -1,0 +1,10 @@
+---
+layout: post
+title:  A paper HAAT: Hybrid Attention Aggregation Transformer for Image Super-Resolution has been accepted for publication in IWAIT 2025!
+date:   2024-10-21 00:00:00 +0800
+---
+
+A paper 'HAAT: Hybrid Attention Aggregation Transformer for Image Super-Resolution' has been accepted for publications in APSIPA ASC!
+
+
+[https://www.arxiv.org/abs/2411.18003](https://www.arxiv.org/abs/2411.18003)
