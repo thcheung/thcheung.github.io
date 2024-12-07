@@ -1,0 +1,11 @@
+---
+layout: post
+title:  A paper "Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection
+" has been accepted for publication in APSIPA ASC 2023!
+date:   2023-08-25 23:00:00 +0800
+---
+
+A paper 'Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection
+' has been accepted for publications in APSIPA ASC 2023!
+
+[https://arxiv.org/abs/2411.19220](https://arxiv.org/abs/2411.19220)
