@@ -10,21 +10,16 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            color: #444;
-            background-color: #eef2f3;
+            color: #333;
+            background-color: #f7f9fc;
         }
 
         header {
-            background: linear-gradient(135deg, #0073b1, #005f8a);
+            background: #4A90E2;
             color: white;
             padding: 2rem 1rem;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        header img {
-            max-width: 100px;
-            margin-bottom: 1rem;
         }
 
         header h1 {
@@ -33,26 +28,25 @@
             font-weight: 700;
         }
 
-        header p {
-            margin: 0.5rem 0;
-            font-size: 1.1rem;
-        }
-
         .contact-info {
             display: flex;
             justify-content: center;
             gap: 1rem;
             flex-wrap: wrap;
+            margin-top: 1rem;
         }
 
         .contact-info a {
-            color: #f9f9f9;
+            color: white;
             text-decoration: none;
-            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background: #357ABD;
+            transition: background 0.3s;
         }
 
         .contact-info a:hover {
-            color: #d1d1d1;
+            background: #2868A2;
         }
 
         .container {
@@ -69,11 +63,11 @@
         }
 
         .section h2 {
-            border-bottom: 3px solid #0073b1;
+            border-bottom: 3px solid #4A90E2;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
             font-size: 1.8rem;
-            color: #0073b1;
+            color: #4A90E2;
             font-weight: 500;
         }
 
@@ -91,13 +85,18 @@
             top: 0;
             bottom: 0;
             width: 4px;
-            background: #0073b1;
+            background: #4A90E2;
         }
 
         .timeline-item {
             position: relative;
             margin-bottom: 30px;
             padding-left: 60px;
+            transition: transform 0.3s;
+        }
+
+        .timeline-item:hover {
+            transform: scale(1.02);
         }
 
         .timeline-item:last-child {
@@ -111,23 +110,29 @@
             top: 0;
             width: 20px;
             height: 20px;
-            background: #0073b1;
+            background: #4A90E2;
             border: 3px solid white;
             border-radius: 50%;
-            box-shadow: 0 0 0 2px #0073b1;
+            box-shadow: 0 0 0 2px #4A90E2;
         }
 
         .timeline-item h3 {
             margin: 0;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #333;
             font-weight: 600;
         }
 
         .timeline-item p {
             margin: 0.3rem 0 0;
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #555;
+        }
+
+        .timeline-item .duration {
+            font-size: 0.9rem;
+            color: #4A90E2;
+            font-weight: 500;
         }
 
         ul {
@@ -157,7 +162,7 @@
         }
 
         .publications ul li strong {
-            color: #0073b1;
+            color: #4A90E2;
             font-weight: 700;
         }
 
@@ -188,11 +193,11 @@
             <ul class="timeline">
                 <li class="timeline-item">
                     <h3>Doctor of Philosophy (PhD) in Electronic and Information Engineering</h3>
-                    <p>The Hong Kong Polytechnic University (Sep 2019 – Feb 2024)</p>
+                    <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2019 – Feb 2024)</span></p>
                 </li>
                 <li class="timeline-item">
                     <h3>Bachelor of Engineering (BEng) in Electronic and Information Engineering</h3>
-                    <p>The Hong Kong Polytechnic University (Sep 2015 – Jun 2019)</p>
+                    <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2015 – Jun 2019)</span></p>
                 </li>
             </ul>
         </div>
@@ -202,23 +207,23 @@
             <ul class="timeline">
                 <li class="timeline-item">
                     <h3>Postdoctoral Fellow</h3>
-                    <p>Centre for Advances in Reliability and Safety, Hong Kong Science Park (May 2024 – Present)</p>
+                    <p>Centre for Advances in Reliability and Safety, Hong Kong Science Park <span class="duration">(May 2024 – Present)</span></p>
                 </li>
                 <li class="timeline-item">
                     <h3>Research Assistant</h3>
-                    <p>Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University (Sep 2023 – Apr 2024)</p>
+                    <p>Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University <span class="duration">(Sep 2023 – Apr 2024)</span></p>
                 </li>
                 <li class="timeline-item">
                     <h3>Graduate Researcher</h3>
-                    <p>Artificial Intelligence and Signal Processing Laboratory, The Hong Kong Polytechnic University (Sep 2019 – Aug 2023)</p>
+                    <p>Artificial Intelligence and Signal Processing Laboratory, The Hong Kong Polytechnic University <span class="duration">(Sep 2019 – Aug 2023)</span></p>
                 </li>
                 <li class="timeline-item">
                     <h3>Data Scientist</h3>
-                    <p>Tocanan Limited, Hong Kong (Jun 2019 – Aug 2019)</p>
+                    <p>Tocanan Limited, Hong Kong <span class="duration">(Jun 2019 – Aug 2019)</span></p>
                 </li>
                 <li class="timeline-item">
                     <h3>Research and Development Intern</h3>
-                    <p>Nuctech Limited, Beijing, China (Jun 2018 – Aug 2018)</p>
+                    <p>Nuctech Limited, Beijing, China <span class="duration">(Jun 2018 – Aug 2018)</span></p>
                 </li>
             </ul>
         </div>
