@@ -1,9 +1,0 @@
----
-layout: post
-title: A paper 'Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours' has been accepted for publication in Knowledge-Based Systems!
-date:   2023-07-14 12:21:23 +0800
----
-
-A paper 'Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours' has been accepted for publications in Knowledge-Based Systems!
-
-[https://www.sciencedirect.com/science/article/abs/pii/S0950705123005579](https://www.sciencedirect.com/science/article/abs/pii/S0950705123005579)
