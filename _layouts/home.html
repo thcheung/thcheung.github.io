@@ -1,33 +1,216 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEUNG Tsun Hin - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+        header {
+            background: #0073b1;
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
 
-  {{ content }}
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
 
-  {%- if site.posts.size > 0 -%}
+        header p {
+            margin: 0.5rem 0 0;
+        }
 
-    <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        <!-- {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%} -->
-      </li>
-      {%- endfor -%}
-    </ul>
+        header a {
+            color: white;
+            text-decoration: underline;
+        }
 
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
-  {%- endif -%}
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
-</div>
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #0073b1;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #0073b1;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #0073b1;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: #0073b1;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px #0073b1;
+        }
+
+        .timeline-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .timeline-item p {
+            margin: 0.3rem 0 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .publications ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .publications ul li {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHEUNG Tsun Hin, Sunny</h1>
+        <p>Hong Kong ∙ <a href="mailto:tsun-hin.cheung@connect.polyu.hk">tsun-hin.cheung@connect.polyu.hk</a> </p>
+        <p><a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn Profile</a></p>
+        <p><a href="https://github.com/thcheung" target="_blank">Github Page</a></p>
+        <p><a href="https://scholar.google.com/citations?user=v5UKVvAAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Education</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <h3>Doctor of Philosophy (PhD) in Electronic and Information Engineering</h3>
+                    <p>The Hong Kong Polytechnic University (Sep 2019 – Feb 2024)</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Bachelor of Engineering (BEng) in Electronic and Information Engineering</h3>
+                    <p>The Hong Kong Polytechnic University (Sep 2015 – Jun 2019)</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <h3>Postdoctoral Fellow</h3>
+                    <p>Centre for Advances in Reliability and Safety, Hong Kong Science Park (May 2024 – Present)</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Research Assistant</h3>
+                    <p>Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University (Sep 2023 – Apr 2024)</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Graduate Researcher</h3>
+                    <p>Artificial Intelligence and Signal Processing Laboratory, The Hong Kong Polytechnic University (Sep 2019 – Aug 2023)</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Data Scientist</h3>
+                    <p>Tocanan Limited, Hong Kong (Jun 2019 – Aug 2019)</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Research and Development Intern</h3>
+                    <p>Nuctech Limited, Beijing, China (Jun 2018 – Aug 2018)</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Project Experience</h2>
+            <ul>
+                <li><strong>Multimodal Large Language Models for Industrial AI Assistant (PoC Project)</strong> (2024 – 2025)</li>
+                <li><strong>RAG-Based Chatbot for Compliance Question Answering (Consultancy Project)</strong> (2023 – 2024)</li>
+                <li><strong>Deep Learning for Fake News and Hate Speech Detection on Social Media (Research Project)</strong> (2020 – 2023)</li>
+                <li><strong>Natural Language Processing for Social Media Monitoring (Consultancy Project)</strong> (2019 – 2020)</li>
+            </ul>
+        </div>
+
+        <div class="section publications">
+            <h2>Publications</h2>
+            <ul>
+              <li>Songjiang Lai, Tsun-Hin Cheung, Ka-Chun Fung, et al., “HAAT: hybrid attention aggregation transformer for image super-resolution, “ SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.</li>
+                <li>Songjiang Lai, Tsun-Hin Cheung, Ka-Chun Fung, et al., “An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024. </li>
+                  <li>Tsun-Hin Cheung, Ka-Chun Fung, Songjiang Lai, et al., “Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024. </li>
+                    <li>Tsun-Hin Cheung and Kin-Man Lam, "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking." Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Taipei, Taiwan, 2023. </li>
+                      <li>Tsun-Hin Cheung and Kin-Man Lam, "Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours," Knowledge-Based Systems, vol. 277, pp. 11807, 2023.  </li>
+                        <li>Tsun-Hin Cheung and Kin-Man Lam, "Crossmodal Bipolar Attention for Multimodal Classification on Social Media," Neurocomputing, vol. 514, pp. 1-12, 2022. </li>
+                          <li>Tsun-Hin Cheung and Kin-Man Lam, “Simultaneous Fake News and Topic Classification via Auxiliary Task Learning,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.</li>
+              
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 CHEUNG Tsun Hin. All Rights Reserved.
+    </footer>
+</body>
+</html>
