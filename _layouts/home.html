@@ -6,42 +6,62 @@
     <title>CHEUNG Tsun Hin, PhD</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+            color: #444;
+            background-color: #eef2f3;
         }
 
         header {
-            background: #0073b1;
+            background: linear-gradient(135deg, #0073b1, #005f8a);
             color: white;
-            padding: 1.5rem 1rem;
+            padding: 2rem 1rem;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            max-width: 100px;
+            margin-bottom: 1rem;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
         }
 
         header p {
-            margin: 0.5rem 0 0;
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
         }
 
-        header a {
-            color: white;
-            text-decoration: underline;
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #f9f9f9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #d1d1d1;
         }
 
         .container {
             max-width: 900px;
             margin: 2rem auto;
-            padding: 1rem;
+            padding: 2rem;
             background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
         .section {
@@ -49,11 +69,12 @@
         }
 
         .section h2 {
-            border-bottom: 2px solid #0073b1;
+            border-bottom: 3px solid #0073b1;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: #0073b1;
+            font-weight: 500;
         }
 
         .timeline {
@@ -69,14 +90,14 @@
             left: 20px;
             top: 0;
             bottom: 0;
-            width: 2px;
+            width: 4px;
             background: #0073b1;
         }
 
         .timeline-item {
             position: relative;
-            margin-bottom: 20px;
-            padding-left: 40px;
+            margin-bottom: 30px;
+            padding-left: 60px;
         }
 
         .timeline-item:last-child {
@@ -88,23 +109,24 @@
             position: absolute;
             left: 12px;
             top: 0;
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             background: #0073b1;
-            border: 2px solid white;
+            border: 3px solid white;
             border-radius: 50%;
             box-shadow: 0 0 0 2px #0073b1;
         }
 
         .timeline-item h3 {
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #333;
+            font-weight: 600;
         }
 
         .timeline-item p {
             margin: 0.3rem 0 0;
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #555;
         }
 
@@ -124,6 +146,19 @@
 
         .publications ul li {
             margin-bottom: 1rem;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .publications ul li:hover {
+            background: #e0e0e0;
+        }
+
+        .publications ul li strong {
+            color: #0073b1;
+            font-weight: 700;
         }
 
         footer {
@@ -131,16 +166,20 @@
             margin-top: 2rem;
             font-size: 0.9rem;
             color: #777;
+            padding: 1rem 0;
+            background: #f5f5f5;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>CHEUNG Tsun Hin</h1>
-        <p>Hong Kong ∙ <a href="mailto:tsun-hin.cheung@connect.polyu.hk">tsun-hin.cheung@connect.polyu.hk</a> </p>
-        <p><a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn Profile</a></p>
-        <p><a href="https://github.com/thcheung" target="_blank">Github Page</a></p>
-        <p><a href="https://scholar.google.com/citations?user=v5UKVvAAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn Profile</a>
+            <a href="https://github.com/thcheung" target="_blank">Github Page</a>
+            <a href="https://scholar.google.com/citations?user=v5UKVvAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
     </header>
 
     <div class="container">
@@ -197,14 +236,13 @@
         <div class="section publications">
             <h2>Publications</h2>
             <ul>
-              <li>Songjiang Lai, Tsun-Hin Cheung, Ka-Chun Fung, et al., “HAAT: hybrid attention aggregation transformer for image super-resolution, “ SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.</li>
-                <li>Songjiang Lai, Tsun-Hin Cheung, Ka-Chun Fung, et al., “An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024. </li>
-                  <li>Tsun-Hin Cheung, Ka-Chun Fung, Songjiang Lai, et al., “Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024. </li>
-                    <li>Tsun-Hin Cheung and Kin-Man Lam, "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking." Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Taipei, Taiwan, 2023. </li>
-                      <li>Tsun-Hin Cheung and Kin-Man Lam, "Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours," Knowledge-Based Systems, vol. 277, pp. 11807, 2023.  </li>
-                        <li>Tsun-Hin Cheung and Kin-Man Lam, "Crossmodal Bipolar Attention for Multimodal Classification on Social Media," Neurocomputing, vol. 514, pp. 1-12, 2022. </li>
-                          <li>Tsun-Hin Cheung and Kin-Man Lam, “Simultaneous Fake News and Topic Classification via Auxiliary Task Learning,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.</li>
-              
+              <li>Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “HAAT: hybrid attention aggregation transformer for image super-resolution,” SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.</li>
+                <li>Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.</li>
+                <li><strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, Songjiang Lai, et al., “Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.</li>
+                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking." Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Taipei, Taiwan, 2023.</li>
+                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours," Knowledge-Based Systems, vol. 277, pp. 11807, 2023.</li>
+                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Crossmodal Bipolar Attention for Multimodal Classification on Social Media," Neurocomputing, vol. 514, pp. 1-12, 2022.</li>
+                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, “Simultaneous Fake News and Topic Classification via Auxiliary Task Learning,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.</li>
             </ul>
         </div>
     </div>
