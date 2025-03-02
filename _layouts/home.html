@@ -1,249 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHEUNG Tsun Hin, PhD</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f7f9fc;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEUNG Tsun Hin, PhD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4A90E2;
+      --secondary-color: #357ABD;
+      --background-color: #f7f9fc;
+      --white: #ffffff;
+      --text-color: #333;
+      --subtext-color: #555;
+      --light-gray: #f5f5f5;
+      --accent-color: #2868A2;
+    }
 
-        header {
-            background: #4A90E2;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            background: #357ABD;
-            transition: background 0.3s;
-        }
-
-        .contact-info a:hover {
-            background: #2868A2;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section h2 {
-            border-bottom: 3px solid #4A90E2;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            font-size: 1.8rem;
-            color: #4A90E2;
-            font-weight: 500;
-        }
-
-        .timeline {
-            position: relative;
-            margin: 2rem 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: #4A90E2;
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 30px;
-            padding-left: 60px;
-            transition: transform 0.3s;
-        }
-
-        .timeline-item:hover {
-            transform: scale(1.02);
-        }
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 12px;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            background: #4A90E2;
-            border: 3px solid white;
-            border-radius: 50%;
-            box-shadow: 0 0 0 2px #4A90E2;
-        }
-
-        .timeline-item h3 {
-            margin: 0;
-            font-size: 1.4rem;
-            color: #333;
-            font-weight: 600;
-        }
-
-        .timeline-item p {
-            margin: 0.3rem 0 0;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        .timeline-item .duration {
-            font-size: 0.9rem;
-            color: #4A90E2;
-            font-weight: 500;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        .p-duration {
-            font-size: 0.9rem;
-            color: #4A90E2;
-            font-weight: 500;
-        }
-        .publications ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .publications ul li {
-            margin-bottom: 1rem;
-            padding: 10px;
-            background: #f5f5f5;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .publications ul li:hover {
-            background: #e0e0e0;
-        }
-
-        .publications ul li strong {
-            color: #4A90E2;
-            font-weight: 700;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #777;
-            padding: 1rem 0;
-            background: #f5f5f5;
-            border-top: 1px solid #ddd;
-        }
-    </style>
+    body {
+      font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+    }
+    
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    
+    .contact-info a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background: var(--secondary-color);
+      transition: background 0.3s, transform 0.3s;
+    }
+    
+    .contact-info a:hover {
+      background: var(--accent-color);
+      transform: translateY(-3px);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--white);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    
+    .section {
+      margin-bottom: 2rem;
+    }
+    
+    .section h2 {
+      border-left: 5px solid var(--primary-color);
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      font-size: 2rem;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+    
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--primary-color);
+      border-radius: 2px;
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 60px;
+      transition: transform 0.3s;
+    }
+    
+    .timeline-item:hover {
+      transform: translateX(5px);
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: var(--primary-color);
+      border: 3px solid var(--white);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--primary-color);
+    }
+    
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-color);
+    }
+    
+    .timeline-item p {
+      margin: 0.3rem 0 0;
+      font-size: 0.95rem;
+      color: var(--subtext-color);
+    }
+    
+    .timeline-item .duration {
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+    
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    
+    ul li {
+      margin-bottom: 0.5rem;
+      transition: transform 0.2s;
+    }
+    
+    ul li:hover {
+      transform: translateX(5px);
+    }
+    
+    .p-duration {
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+    
+    .publications ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .publications ul li {
+      margin-bottom: 1rem;
+      padding: 15px;
+      background: var(--light-gray);
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+    
+    .publications ul li:hover {
+      background: #e0e0e0;
+      transform: translateY(-3px);
+    }
+    
+    .publications ul li strong {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 1rem 0;
+      background: var(--light-gray);
+      border-top: 1px solid #ddd;
+    }
+    
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      .container {
+        padding: 1rem;
+        margin: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>CHEUNG Tsun Hin, PhD</h1>
-        <div class="contact-info">
-            <a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn Profile</a>
-            <a href="https://github.com/thcheung" target="_blank">Github Page</a>
-            <a href="https://scholar.google.com/citations?user=v5UKVvAAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        </div>
-    </header>
+  <header>
+    <h1>CHEUNG Tsun Hin, PhD</h1>
+    <div class="contact-info">
+      <a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn Profile</a>
+      <a href="https://github.com/thcheung" target="_blank">Github Page</a>
+      <a href="https://scholar.google.com/citations?user=v5UKVvAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    </div>
+  </header>
 
-    <div class="container">
-        <div class="section">
-            <h2>Education</h2>
-            <ul class="timeline">
-                <li class="timeline-item">
-                    <h3>Doctor of Philosophy (PhD) in Electronic and Information Engineering</h3>
-                    <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2019 – Feb 2024)</span></p>
-                </li>
-                <li class="timeline-item">
-                    <h3>Bachelor of Engineering (BEng) in Electronic and Information Engineering</h3>
-                    <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2015 – Jun 2019)</span></p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Project Experience</h2>
-            <ul>
-                <li>
-                    <strong>Multimodal Large Language Models for Industrial AI Assistant</strong>  <span class="p-duration">(2024 – 2025)</span>
-                    <img src="assets/pj1.png" alt="Multimodal Large Language Models" style="max-width: 70%; height: auto;">
-                </li>
-                <li>
-                    <strong>RAG-Based Chatbot for Compliance Question Answering</strong>  <span class="p-duration">(2023 – 2024)</span>
-                    <img src="assets/pj2.png" alt="RAG-Based Chatbot" style="max-width: 70%; height: auto;">
-                </li>
-                <li>
-                    <strong>Deep Learning for Fake News and Hate Speech Detection on Social Media</strong>  <span class="p-duration">(2020 – 2023)</span>
-                    <img src="assets/pj3.png" alt="Fake News Detection" style="max-width: 70%; height: auto;">
-                </li>
-                <li>
-                    <strong>Natural Language Processing for Social Media Monitoring</strong>  <span class="p-duration">(2019 – 2020)</span>
-                    <img src="assets/pj4.png" alt="Social Media Monitoring" style="max-width: 70%; height: auto;">
-                </li>
-            </ul>
-        </div>
-
-        <div class="section publications">
-            <h2>Publications</h2>
-            <ul>
-              <li>Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “HAAT: hybrid attention aggregation transformer for image super-resolution,” SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.</li>
-                <li>Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.</li>
-                <li><strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, Songjiang Lai, et al., “Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.</li>
-                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking." Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Taipei, Taiwan, 2023.</li>
-                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours," Knowledge-Based Systems, vol. 277, pp. 11807, 2023.</li>
-                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Crossmodal Bipolar Attention for Multimodal Classification on Social Media," Neurocomputing, vol. 514, pp. 1-12, 2022.</li>
-                <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, “Simultaneous Fake News and Topic Classification via Auxiliary Task Learning,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.</li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="section">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <h3>Doctor of Philosophy (PhD) in Electronic and Information Engineering</h3>
+          <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2019 - Feb 2024)</span></p>
+        </li>
+        <li class="timeline-item">
+          <h3>Bachelor of Engineering (BEng) in Electronic and Information Engineering</h3>
+          <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2015 - Jun 2019)</span></p>
+        </li>
+      </ul>
     </div>
 
-    <footer>
-        &copy; 2025 CHEUNG Tsun Hin. All Rights Reserved.
-    </footer>
+    <div class="section">
+      <h2>Project Experience</h2>
+      <ul>
+        <li>
+            <h3><strong>Multimodal Large Language Models for Industrial AI Assistant</strong>  <span class="p-duration">(2024 - 2025)</span></h3>
+          <img src="assets/pj1.png" alt="Multimodal Large Language Models">
+        </li>
+        <li>
+            <h3><strong>RAG-Based Chatbot for Compliance Question Answering</strong>  <span class="p-duration">(2023 - 2024)</span></h3>
+          <img src="assets/pj2.png" alt="RAG-Based Chatbot">
+        </li>
+        <li>
+            <h3><strong>Deep Learning for Fake News and Hate Speech Detection on Social Media</strong>  <span class="p-duration">(2020 - 2023)</span></h3>
+          <img src="assets/pj3.png" alt="Fake News Detection">
+        </li>
+        <li>
+            <h3><strong>Natural Language Processing for Social Media Monitoring</strong>  <span class="p-duration">(2019 - 2020)</span></h3>
+          <img src="assets/pj4.png" alt="Social Media Monitoring">
+        </li>
+      </ul>
+    </div>
+
+    <div class="section publications">
+      <h2>Publications</h2>
+      <ul>
+        <li>Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “HAAT: hybrid attention aggregation transformer for image super-resolution,” SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.</li>
+        <li>Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.</li>
+        <li><strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, Songjiang Lai, et al., “Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.</li>
+        <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking." Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Taipei, Taiwan, 2023.</li>
+        <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours," Knowledge-Based Systems, vol. 277, pp. 11807, 2023.</li>
+        <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Crossmodal Bipolar Attention for Multimodal Classification on Social Media," Neurocomputing, vol. 514, pp. 1-12, 2022.</li>
+        <li><strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, “Simultaneous Fake News and Topic Classification via Auxiliary Task Learning,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 CHEUNG Tsun Hin. All Rights Reserved.
+  </footer>
 </body>
 </html>
