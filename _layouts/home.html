@@ -116,68 +116,6 @@
       transform: translateY(-2px);
     }
 
-    /* Timeline Section */
-    .timeline {
-      position: relative;
-      margin: 2rem 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 20px;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--primary-color);
-      border-radius: 2px;
-    }
-
-    .timeline-item {
-      position: relative;
-      margin-bottom: 30px;
-      padding-left: 60px;
-      transition: transform 0.3s;
-    }
-
-    .timeline-item:hover {
-      transform: translateX(5px);
-    }
-
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: 12px;
-      top: 0;
-      width: 20px;
-      height: 20px;
-      background: var(--primary-color);
-      border: 3px solid var(--white);
-      border-radius: 50%;
-      box-shadow: 0 0 0 2px var(--primary-color);
-    }
-
-    .timeline-item h3 {
-      margin: 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--text-color);
-    }
-
-    .timeline-item p {
-      margin: 0.3rem 0 0;
-      font-size: 1rem;
-      color: var(--subtext-color);
-    }
-
-    .timeline-item .duration {
-      font-size: 0.95rem;
-      color: var(--primary-color);
-      font-weight: 500;
-    }
-
     /* Project Listings */
     main ul {
       list-style-type: none;
@@ -186,6 +124,7 @@
 
     main ul li {
       margin-bottom: 2rem;
+      /* text-align: center;  */
     }
 
     main ul li h3 {
@@ -199,11 +138,14 @@
     }
 
     main ul li img {
-      max-width: 100%;
+      max-width: 75%; /* Reduce the maximum width to 75% */
       height: auto;
       border-radius: 8px;
       margin-top: 1rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: block; /* Centers the image */
+      margin-left: auto; /* Centers the image */
+      margin-right: auto; /* Centers the image */
     }
 
     /* Publications */
@@ -240,11 +182,11 @@
       header h1 {
         font-size: 2.5rem;
       }
-      
+
       main {
         padding: 2rem 1rem;
       }
-      
+
       .section {
         padding: 1.5rem;
       }
@@ -287,21 +229,7 @@
     </section>
 
     <section class="section">
-      <h2>Education</h2>
-      <ul class="timeline">
-        <li class="timeline-item">
-          <h3>PhD in Electronic and Information Engineering</h3>
-          <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2019 - Feb 2024)</span></p>
-        </li>
-        <li class="timeline-item">
-          <h3>BEng in Electronic and Information Engineering</h3>
-          <p>The Hong Kong Polytechnic University <span class="duration">(Sep 2015 - Jun 2019)</span></p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Project Experience</h2>
+      <h2>List of Projects</h2>
       <ul>
         <li>
           <h3>
