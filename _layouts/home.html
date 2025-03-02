@@ -88,7 +88,24 @@
       color: var(--primary-color);
       font-weight: 500;
     }
+        /* Badge styling for keyword sections */
+        .keyword-badge {
+      display: inline-block;
+      background: var(--secondary-color);
+      color: var(--white);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 0.3rem;
+      font-size: 0.9rem;
+      transition: background 0.3s, transform 0.3s;
+    }
     
+    .keyword-badge:hover {
+      background: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+
     .timeline {
       position: relative;
       margin: 2rem 0;
@@ -234,6 +251,29 @@
   </header>
 
   <div class="container">
+      <div class="section">
+        <h2>Research Interests</h2>
+        <div>
+          <span class="keyword-badge">Machine Learning</span>
+          <span class="keyword-badge">Natural Language Processing</span>
+          <span class="keyword-badge">Large Language Models</span>
+        </div>
+      </div>
+        <div class="section">
+        <h2>Devlopement Skills</h2>
+        <div>
+          <span class="keyword-badge">PyTorch</span>
+          <span class="keyword-badge">HuggingFace</span>
+          <span class="keyword-badge">Scrapy</span>
+          <span class="keyword-badge">LangChain</span>
+          <span class="keyword-badge">HuggingFace</span>
+          <span class="keyword-badge">React.js</span>
+          <span class="keyword-badge">FastAPI</span>
+          <span class="keyword-badge">MySQL</span>
+          <span class="keyword-badge">Tableau</span>
+        </div>
+      </div>
+
     <div class="section">
       <h2>Education</h2>
       <ul class="timeline">
