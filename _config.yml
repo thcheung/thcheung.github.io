@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tsun-Hin Cheung
+title: Tsun-Hin Cheung - Research Scientist
 email: tsun-hin.cheung@connect.polyu.hk
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
