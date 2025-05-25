@@ -178,6 +178,25 @@
       border-top: 1px solid #ddd;
     }
 
+    /* Button Styles */
+    .toggle-btn {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      background: var(--secondary-color);
+      transition: background 0.3s, transform 0.3s;
+      border: none;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+    }
+
+    .toggle-btn:hover {
+      background: var(--accent-color);
+      transform: translateY(-3px);
+    }
+
     /* Responsive Design */
     @media (max-width: 600px) {
       header h1 {
@@ -196,7 +215,7 @@
 </head>
 <body>
   <header>
-    <h1>CHEUNG Tsun Hin</h1>
+    <h1>🚀 CHEUNG Tsun Hin</h1>
     <p>Advancing Research in Machine Learning &amp; AI</p>
     <div class="contact-info">
       <a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn</a>
@@ -236,29 +255,33 @@
           <h3>
             <strong>Multimodal Large Language Models for Industrial AI Assistant</strong>
             <span class="p-duration">(2024 - 2025)</span>
+            <button class="toggle-btn" onclick="toggleImage(this)">🔍</button>
           </h3>
-          <img src="assets/pj1.png" alt="Multimodal Large Language Models" />
+          <img src="assets/pj1.png" alt="Multimodal Large Language Models" style="display: none;" />
         </li>
         <li>
           <h3>
             <strong>RAG-Based Chatbot for Compliance Question Answering</strong>
             <span class="p-duration">(2023 - 2024)</span>
+            <button class="toggle-btn" onclick="toggleImage(this)">🔍</button>
           </h3>
-          <img src="assets/pj2.png" alt="RAG-Based Chatbot" />
+          <img src="assets/pj2.png" alt="RAG-Based Chatbot" style="display: none;" />
         </li>
         <li>
           <h3>
             <strong>Deep Learning for Fake News and Hate Speech Detection on Social Media</strong>
             <span class="p-duration">(2020 - 2023)</span>
+            <button class="toggle-btn" onclick="toggleImage(this)">🔍</button>
           </h3>
-          <img src="assets/pj3.png" alt="Fake News Detection" />
+          <img src="assets/pj3.png" alt="Fake News Detection" style="display: none;" />
         </li>
         <li>
           <h3>
             <strong>Natural Language Processing for Social Media Monitoring</strong>
             <span class="p-duration">(2019 - 2020)</span>
+            <button class="toggle-btn" onclick="toggleImage(this)">🔍</button>
           </h3>
-          <img src="assets/pj4.png" alt="Social Media Monitoring" />
+          <img src="assets/pj4.png" alt="Social Media Monitoring" style="display: none;" />
         </li>
       </ul>
     </section>
@@ -300,5 +323,16 @@
   <footer>
     &copy; 2025 CHEUNG Tsun Hin. All Rights Reserved.
   </footer>
+
+  <script>
+    function toggleImage(button) {
+      const img = button.parentElement.nextElementSibling;
+      if (img.style.display === "none") {
+        img.style.display = "block";
+      } else {
+        img.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
