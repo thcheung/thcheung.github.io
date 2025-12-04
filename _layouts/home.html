@@ -236,7 +236,7 @@
       padding: 0 2rem 6rem 2rem;
       max-width: 1200px;
       margin: 0 auto;
-      margin-top: 4rem;
+      margin-top: 1rem;
     }
 
     .section {
@@ -437,8 +437,57 @@
 
     /* Responsive Design */
     @media (max-width: 768px) {
+      nav .nav-container {
+        padding: 0 1.5rem;
+      }
+
+      nav .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--background-secondary);
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+
+      nav .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      nav .nav-links li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      nav .nav-links li:last-child {
+        border-bottom: none;
+      }
+
+      nav .nav-links a {
+        display: block;
+        padding: 1rem 1.5rem;
+        width: 100%;
+      }
+
+      nav .nav-links a::after {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
       header {
-        padding: 4rem 1.5rem 6rem 1.5rem;
+        padding: 6rem 1.5rem 6rem 1.5rem;
       }
 
       header h1 {
