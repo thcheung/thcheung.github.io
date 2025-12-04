@@ -5,217 +5,424 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CHEUNG Tsun Hin - Research Scientist</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Ginto+Nord:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/gg-sans" rel="stylesheet" />
   <style>
-    /* Global Variables */
+    /* Global Variables - Dark Mode Navy/Blue Theme */
     :root {
-      --primary-color: #4A90E2;
-      --secondary-color: #357ABD;
-      --background-color: #f7f9fc;
+      --discord-blurple: #5865F2;
+      --discord-dark-blurple: #4752C4;
+      --discord-green: #3BA55D;
+      --discord-yellow: #FEE75C;
+      --discord-fuchsia: #EB459E;
+      --discord-red: #ED4245;
+      --background-color: #313338;
+      --background-secondary: #2b2d31;
+      --background-tertiary: #1e1f22;
       --white: #ffffff;
-      --text-color: #333;
-      --subtext-color: #555;
-      --light-gray: #f5f5f5;
-      --accent-color: #2868A2;
+      --text-color: #f2f3f5;
+      --text-secondary: #b5bac1;
+      --text-muted: #80848e;
+      --light-gray: #3f4147;
+      --interactive-normal: #b5bac1;
+      --interactive-hover: #dcddde;
+      --interactive-active: #fff;
+      --shadow-sm: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+      --shadow-md: 0 2px 10px 0 rgba(0,0,0,.2);
+      --shadow-lg: 0 8px 16px rgba(0,0,0,.24);
+      --shadow-xl: 0 8px 24px rgba(0,0,0,.3);
     }
 
     /* Base Styles */
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: var(--background-color);
       color: var(--text-color);
-      line-height: 1.6;
+      line-height: 1.625;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      font-size: 16px;
     }
 
-    /* Navbar & Hero Section */
+    /* Hero Section - Discord style */
     header {
       position: relative;
       text-align: center;
-      color: var(--white);
-      padding: 4rem 1rem;
-      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: var(--text-color);
+      padding: 6rem 2rem 8rem 2rem;
+      background: linear-gradient(135deg, #1e1f22 0%, #2b2d31 50%, #313338 100%);
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%25" y1="0%25" x2="100%25" y2="100%25"><stop offset="0%25" style="stop-color:rgba(88,101,242,0.2);stop-opacity:1" /><stop offset="100%25" style="stop-color:rgba(88,101,242,0.4);stop-opacity:1" /></linearGradient></defs><circle cx="100" cy="80" r="60" fill="rgba(88,101,242,0.15)"/><circle cx="1100" cy="320" r="80" fill="rgba(88,101,242,0.1)"/><path d="M 200,300 Q 300,250 400,300 T 600,300" stroke="rgba(88,101,242,0.3)" stroke-width="3" fill="none"/><circle cx="900" cy="100" r="40" fill="rgba(88,101,242,0.2)"/><rect x="50" y="250" width="60" height="60" rx="8" fill="rgba(88,101,242,0.15)" transform="rotate(45 80 280)"/><polygon points="1000,200 1050,150 1100,200 1050,250" fill="rgba(88,101,242,0.12)"/><circle cx="300" cy="100" r="25" fill="rgba(88,101,242,0.18)"/><path d="M 700,100 L 750,150 L 800,100 L 750,50 Z" fill="rgba(88,101,242,0.15)"/><circle cx="500" cy="80" r="35" fill="rgba(88,101,242,0.2)"/><rect x="150" y="150" width="50" height="50" rx="25" fill="rgba(88,101,242,0.12)"/></svg>');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: 
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,60 C300,120 400,0 600,60 C800,120 900,0 1200,60 L1200,120 L0,120 Z" fill="%23313338"/></svg>');
+      background-size: cover;
+      z-index: 1;
     }
 
     header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 3.5rem;
-      letter-spacing: 1px;
+      position: relative;
+      margin: 0 0 1.5rem 0;
+      font-weight: 900;
+      font-size: 4rem;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      font-family: 'gg sans', 'Noto Sans', sans-serif;
+      color: var(--white);
+      z-index: 2;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
 
     header p {
+      position: relative;
       font-size: 1.25rem;
-      margin-top: 1rem;
+      margin: 0 auto 2rem auto;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.95);
+      max-width: 800px;
+      line-height: 1.625;
+      z-index: 2;
     }
 
     .contact-info {
+      position: relative;
       display: flex;
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
       margin-top: 2rem;
+      z-index: 2;
     }
 
     .contact-info a {
       color: var(--white);
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      background: var(--secondary-color);
-      transition: background 0.3s, transform 0.3s;
+      padding: 1rem 2rem;
+      border-radius: 28px;
+      background: var(--discord-blurple);
+      transition: all 0.17s ease;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: var(--shadow-sm);
+      border: none;
     }
 
     .contact-info a:hover {
-      background: var(--accent-color);
-      transform: translateY(-3px);
+      background: var(--discord-dark-blurple);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-info a:active {
+      transform: translateY(0);
     }
 
     /* Main Content Sections */
     main {
       display: flex;
       flex-direction: column;
-      gap: 4rem;
-      padding: 4rem 1rem;
+      gap: 3rem;
+      padding: 0 2rem 6rem 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .section {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background: var(--background-secondary);
+      padding: 3rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.2s ease;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .section:hover {
+      box-shadow: var(--shadow-lg);
+      background: #32343a;
     }
 
     .section h2 {
-      border-left: 5px solid var(--primary-color);
-      margin-bottom: 1rem;
-      padding-left: 1rem;
-      font-size: 2.2rem;
-      color: var(--primary-color);
-      font-weight: 500;
+      margin: 0 0 2rem 0;
+      padding: 0;
+      font-size: 2rem;
+      color: var(--text-color);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      border: none;
+      font-family: 'gg sans', 'Noto Sans', sans-serif;
     }
 
-    /* Keyword Badges */
+    /* Keyword Badges - Discord pill style */
     .keyword-badge {
       display: inline-block;
-      background: var(--secondary-color);
+      background: var(--discord-blurple);
       color: var(--white);
-      padding: 5px 15px;
-      border-radius: 50px;
-      margin: 0.3rem;
-      font-size: 0.95rem;
-      transition: background 0.3s, transform 0.3s;
+      padding: 0.4rem 1rem;
+      border-radius: 16px;
+      margin: 0.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: all 0.17s ease;
     }
 
     .keyword-badge:hover {
-      background: var(--accent-color);
-      transform: translateY(-2px);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+      background: var(--discord-dark-blurple);
+    }
+
+    .keyword-badge:nth-child(3n+1) {
+      background: var(--discord-blurple);
+    }
+
+    .keyword-badge:nth-child(3n+2) {
+      background: var(--discord-green);
+      color: var(--text-color);
+    }
+
+    .keyword-badge:nth-child(3n) {
+      background: var(--discord-fuchsia);
+    }
+
+    .keyword-badge:nth-child(3n+1):hover {
+      background: var(--discord-dark-blurple);
+    }
+
+    .keyword-badge:nth-child(3n+2):hover {
+      background: #3ba55d;
+      color: var(--white);
+    }
+
+    .keyword-badge:nth-child(3n):hover {
+      background: #d8356a;
     }
 
     /* Project Listings */
     main ul {
       list-style-type: none;
       padding-left: 0;
+      margin: 0;
     }
 
     main ul li {
-      margin-bottom: 2rem;
-      /* text-align: center;  */
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      background: var(--background-tertiary);
+      border-radius: 8px;
+      transition: all 0.17s ease;
+    }
+
+    main ul li:hover {
+      background: #232428;
+      transform: translateX(4px);
     }
 
     main ul li h3 {
-      margin-bottom: 1rem;
+      margin: 0;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--text-color);
+      line-height: 1.5;
     }
 
     .p-duration {
-      font-size: 0.95rem;
-      color: var(--primary-color);
-      font-weight: 500;
+      font-size: 0.875rem;
+      color: var(--discord-blurple);
+      font-weight: 600;
+      background: rgba(88, 101, 242, 0.1);
+      padding: 0.25rem 0.625rem;
+      border-radius: 12px;
+      display: inline-block;
+      margin-left: 0.5rem;
     }
 
     main ul li img {
-      max-width: 75%; /* Reduce the maximum width to 75% */
+      max-width: 75%;
       height: auto;
       border-radius: 8px;
       margin-top: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: block; /* Centers the image */
-      margin-left: auto; /* Centers the image */
-      margin-right: auto; /* Centers the image */
+      box-shadow: var(--shadow-md);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: all 0.2s ease;
+    }
+
+    main ul li img:hover {
+      transform: scale(1.01);
+      box-shadow: var(--shadow-xl);
     }
 
     /* Publications */
     .publications li {
-      margin-bottom: 1.5rem;
-      padding: 15px;
-      background: var(--light-gray);
-      border-radius: 5px;
-      transition: background 0.3s, transform 0.3s;
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      background: var(--background-tertiary);
+      border-radius: 8px;
+      border-left: 4px solid var(--discord-blurple);
+      transition: all 0.17s ease;
     }
 
     .publications li:hover {
-      background: #e0e0e0;
-      transform: translateY(-3px);
+      background: #232428;
+      transform: translateX(4px);
+      border-left-color: var(--discord-blurple);
+    }
+
+    .publications li a {
+      color: var(--discord-blurple);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.17s ease;
+    }
+
+    .publications li a:hover {
+      color: #7289da;
+      text-decoration: underline;
     }
 
     .publications li strong {
-      color: var(--primary-color);
+      color: var(--discord-blurple);
       font-weight: 700;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: var(--light-gray);
-      color: #777;
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
+      padding: 3rem 1rem;
+      background: var(--background-secondary);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
+      margin-top: 2rem;
     }
 
     /* Button Styles */
     .toggle-btn {
       color: var(--white);
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 50px;
-      background: var(--secondary-color);
-      transition: background 0.3s, transform 0.3s;
+      padding: 1rem 2rem;
+      border-radius: 28px;
+      background: var(--discord-blurple);
+      transition: all 0.17s ease;
       border: none;
       cursor: pointer;
-      font-family: 'Montserrat', sans-serif;
+      font-family: inherit;
       font-size: 1rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-sm);
     }
 
     .toggle-btn:hover {
-      background: var(--accent-color);
-      transform: translateY(-3px);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-lg);
+      background: var(--discord-dark-blurple);
+    }
+
+    .toggle-btn:active {
+      transform: translateY(0);
     }
 
     /* Responsive Design */
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+      header {
+        padding: 4rem 1.5rem 6rem 1.5rem;
+      }
+
       header h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+      }
+
+      header p {
+        font-size: 1.125rem;
       }
 
       main {
-        padding: 2rem 1rem;
+        padding: 0 1.5rem 4rem 1.5rem;
+        gap: 2.5rem;
+      }
+
+      .section {
+        padding: 2rem 1.5rem;
+      }
+
+      .section h2 {
+        font-size: 1.75rem;
+      }
+
+      main ul li img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.25rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .contact-info a {
+        text-align: center;
+      }
+
+      main {
+        padding: 0 1rem 3rem 1rem;
       }
 
       .section {
         padding: 1.5rem;
+      }
+
+      .section h2 {
+        font-size: 1.5rem;
+      }
+
+      .keyword-badge {
+        font-size: 0.8125rem;
+        padding: 0.35rem 0.875rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🚀 CHEUNG Tsun Hin</h1>
+    <h1>CHEUNG Tsun Hin</h1>
     <p>Advancing Research in Machine Learning &amp; AI</p>
     <div class="contact-info">
       <a href="https://www.linkedin.com/in/tsunhincheung" target="_blank">LinkedIn</a>
@@ -282,31 +489,31 @@
       <h2>Publications</h2>
       <ul>
         <li>
-          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “HAAT: hybrid attention aggregation transformer for image super-resolution,” SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.
+          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, Ke Xue, Jiayi Zhao, Habtamu Lemma Goshu, et al., "<a href="https://www.mdpi.com/1424-8220/25/21/6652" target="_blank">Fault Diagnosis of Rolling Bearings Using Denoising Multi-Channel Mixture of CNN and Mamba-Enhanced Adaptive Self-Attention LSTM</a>," Sensors, vol. 25, no. 21, pp. 6652, 2025.
+        </li>
+        <li>
+          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:L8Ckcad2t8MC" target="_blank">HAAT: Hybrid Attention Aggregation Transformer for Image Super-Resolution</a>," SPIE International Workshop on Advanced Imaging Technology (IWAIT), Yunlin, Taiwan, 2025.
         </li>
           <li>
-          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Jiayi Zhao, et al., “Residual Attention Single-Head Vision Transformer Network for Rolling Bearing Fault Diagnosis in Noisy Environments,” ACM International Conference on Video, Signal and Image Processing, Ningbo, China, 2024.
+          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Jiayi Zhao, et al., "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:CHSYGLWDkRkC" target="_blank">Residual Attention Single-Head Vision Transformer Network for Rolling Bearing Fault Diagnosis in Noisy Environments</a>," ACM International Conference on Video, Signal and Image Processing, Ningbo, China, 2024.
         </li>
         <li>
-          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., “An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.
+          Songjiang Lai, <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, et al., "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:mVmsd5A6BfQC" target="_blank">An End-to-End Two-Stream Network Based on RGB Flow and Representation Flow for Human Action Recognition</a>," Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.
         </li>
         <li>
-          <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, Songjiang Lai, et al., “Automatic Prompt Generation and Grounding Object Detection for Zero-Shot
-          Image Anomaly Detection,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China,
-          2024.
+          <strong>Tsun-Hin Cheung</strong>, Ka-Chun Fung, Songjiang Lai, et al., "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:LkGwnXOMwfcC" target="_blank">Automatic Prompt Generation and Grounding Object Detection for Zero-Shot Image Anomaly Detection</a>," Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Macau, China, 2024.
         </li>
         <li>
-          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking." Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC),
-          Taipei, Taiwan, 2023.
+          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:YOwf2qJgpHMC" target="_blank">FactLLaMA: Optimizing Instruction-Following Language Models with External Knowledge for Automated Fact-Checking</a>," Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Taipei, Taiwan, 2023.
         </li>
         <li>
-          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours," Knowledge-Based Systems, vol. 277, pp. 11807, 2023.
+          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:8k81kl-MbHgC" target="_blank">Causal Diffused Graph-Transformer Network with Stacked Early Classification Loss for Efficient Stream Classification of Rumours</a>," Knowledge-Based Systems, vol. 277, pp. 110807, 2023.
         </li>
         <li>
-          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "Crossmodal Bipolar Attention for Multimodal Classification on Social Media," Neurocomputing, vol. 514, pp. 1-12, 2022.
+          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:MXK_kJrjxJIC" target="_blank">Crossmodal Bipolar Attention for Multimodal Classification on Social Media</a>," Neurocomputing, vol. 514, pp. 1-12, 2022.
         </li>
         <li>
-          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, “Simultaneous Fake News and Topic Classification via Auxiliary Task Learning,” Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.
+          <strong>Tsun-Hin Cheung</strong> and Kin-Man Lam, "<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=v5UKVvAAAAAJ&sortby=pubdate&citation_for_view=v5UKVvAAAAAJ:qjMakFHDy7sC" target="_blank">Simultaneous Fake News and Topic Classification via Auxiliary Task Learning</a>," Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), Auckland, New Zealand, 2020.
         </li>
       </ul>
     </section>
