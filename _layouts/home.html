@@ -348,6 +348,36 @@
       margin-left: 0.5rem;
     }
 
+    .project-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-header h3 {
+      margin: 0;
+      flex: 1;
+    }
+
+    main ul li img.project-image {
+      max-width: 65%;
+      height: auto;
+      border-radius: 16px;
+      margin-top: 1rem;
+      box-shadow: var(--shadow-lg);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: all 0.2s ease;
+    }
+
+    main ul li img.project-image:hover {
+      transform: scale(1.02);
+      box-shadow: var(--shadow-xl);
+    }
+
     main ul li img {
       max-width: 75%;
       height: auto;
@@ -605,28 +635,39 @@
       <h2>List of Projects</h2>
       <ul>
         <li>
-          <h3>
-            <strong>Post-Training of Large Language Models for Patent Analytics in Scientific Discovery</strong>
-            <span class="p-duration">(2025 - Now)</span>
-          </h3>
+          <div class="project-header">
+            <h3>
+              <strong>Post-Training of Large Language Models for Patent Analytics in Scientific Discovery</strong>
+              <span class="p-duration">(2025 - Now)</span>
+            </h3>
+          </div>
         </li>
         <li>
-          <h3>
-            <strong>RAG-Powered Large Language Models for Industrial AI Assistant</strong>
-            <span class="p-duration">(2024 - 2025)</span>
-          </h3>
+          <div class="project-header">
+            <h3>
+              <strong>RAG-Powered Large Language Models for Industrial AI Assistant</strong>
+              <span class="p-duration">(2024 - 2025)</span>
+            </h3>
+          </div>
+          <img src="assets/p3.png" alt="RAG-Powered LLM for Industrial AI Assistant" class="project-image" />
         </li>
         <li>
-          <h3>
-            <strong>Multimodal Deep Learning for Fake News and Hate Speech Detection on Social Media</strong>
-            <span class="p-duration">(2020 - 2023)</span>
-          </h3>
+          <div class="project-header">
+            <h3>
+              <strong>Multimodal Deep Learning for Fake News and Hate Speech Detection on Social Media</strong>
+              <span class="p-duration">(2020 - 2023)</span>
+            </h3>
+          </div>
+          <img src="assets/p2.png" alt="Multimodal Deep Learning for Fake News and Hate Speech Detection" class="project-image" />
         </li>
         <li>
-          <h3>
-            <strong>Natural Language Processing for Social Media Business Intelligence</strong>
-            <span class="p-duration">(2019 - 2020)</span>
-          </h3>
+          <div class="project-header">
+            <h3>
+              <strong>Natural Language Processing for Social Media Business Intelligence</strong>
+              <span class="p-duration">(2019 - 2020)</span>
+            </h3>
+          </div>
+          <img src="assets/p1.png" alt="NLP for Social Media Business Intelligence" class="project-image" />
         </li>
       </ul>
     </section>
