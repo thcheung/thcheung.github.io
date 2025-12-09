@@ -36,15 +36,6 @@ Visit the live site at: [https://thcheung.github.io](https://thcheung.github.io)
 - **Font**: GG Sans, Inter
 - **Icons**: Unicode symbols
 
-## 📚 Publications
-
-The site features publications from:
-- IEEE Xplore
-- ScienceDirect (Neurocomputing, Knowledge-Based Systems)
-- ACM Digital Library
-- MDPI (Sensors)
-- SPIE Digital Library
-
 ## 🚀 Local Development
 
 ### Prerequisites
