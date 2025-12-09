@@ -33,6 +33,24 @@
       --shadow-xl: 0 8px 24px rgba(0,0,0,.3);
     }
 
+    /* Light Mode Variables */
+    :root.light-mode {
+      --background-color: #ffffff;
+      --background-secondary: #f6f6f7;
+      --background-tertiary: #e3e5e8;
+      --text-color: #060607;
+      --text-secondary: #4e5058;
+      --text-muted: #747f8d;
+      --light-gray: #e3e5e8;
+      --interactive-normal: #4e5058;
+      --interactive-hover: #2e3035;
+      --interactive-active: #060607;
+      --shadow-sm: 0 1px 0 rgba(4,4,5,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(4,4,5,0.025);
+      --shadow-md: 0 2px 10px 0 rgba(0,0,0,.1);
+      --shadow-lg: 0 8px 16px rgba(0,0,0,.15);
+      --shadow-xl: 0 8px 24px rgba(0,0,0,.2);
+    }
+
     /* Base Styles */
     * {
       box-sizing: border-box;
@@ -72,6 +90,14 @@
       justify-content: space-between;
       align-items: center;
       height: 60px;
+      gap: 2rem;
+    }
+
+    nav .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: auto;
     }
 
     nav .nav-brand {
@@ -133,6 +159,25 @@
       padding: 0.5rem;
     }
 
+    .theme-toggle {
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 1.25rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      margin-left: 1rem;
+      border-radius: 8px;
+      transition: all 0.17s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .theme-toggle:hover {
+      background: var(--background-tertiary);
+    }
+
     /* Hero Section - Discord style */
     header {
       position: relative;
@@ -141,6 +186,11 @@
       padding: 8rem 2rem 8rem 2rem;
       background: linear-gradient(135deg, #1e1f22 0%, #2b2d31 50%, #313338 100%);
       overflow: hidden;
+      transition: background 0.3s ease;
+    }
+
+    :root.light-mode header {
+      background: linear-gradient(135deg, #e8eaf0 0%, #f0f1f5 50%, #ffffff 100%);
     }
 
     header::before {
@@ -156,6 +206,11 @@
       background-position: center;
       opacity: 0.8;
       z-index: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    :root.light-mode header::before {
+      opacity: 0.4;
     }
 
     header::after {
@@ -169,6 +224,12 @@
         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,60 C300,120 400,0 600,60 C800,120 900,0 1200,60 L1200,120 L0,120 Z" fill="%23313338"/></svg>');
       background-size: cover;
       z-index: 1;
+      transition: background 0.3s ease;
+    }
+
+    :root.light-mode header::after {
+      background: 
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,60 C300,120 400,0 600,60 C800,120 900,0 1200,60 L1200,120 L0,120 Z" fill="%23ffffff"/></svg>');
     }
 
     header h1 {
@@ -182,6 +243,12 @@
       color: var(--white);
       z-index: 2;
       text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    :root.light-mode header h1 {
+      color: #060607;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
     header p {
@@ -193,6 +260,11 @@
       max-width: 800px;
       line-height: 1.625;
       z-index: 2;
+      transition: color 0.3s ease;
+    }
+
+    :root.light-mode header p {
+      color: rgba(6, 6, 7, 0.8);
     }
 
     .contact-info {
@@ -253,6 +325,10 @@
       transform: translateY(0);
     }
 
+    :root.light-mode .contact-info a::before {
+      filter: brightness(0) saturate(100%);
+    }
+
     /* Main Content Sections */
     main {
       display: flex;
@@ -275,7 +351,14 @@
 
     .section:hover {
       box-shadow: var(--shadow-lg);
+    }
+
+    :root:not(.light-mode) .section:hover {
       background: #32343a;
+    }
+
+    :root.light-mode .section:hover {
+      background: #ededf0;
     }
 
     .section h2 {
@@ -349,8 +432,13 @@
       transition: all 0.17s ease;
     }
 
-    main ul li:hover {
+    :root:not(.light-mode) main ul li:hover {
       background: #232428;
+      transform: translateX(4px);
+    }
+
+    :root.light-mode main ul li:hover {
+      background: #d9dadd;
       transform: translateX(4px);
     }
 
@@ -430,8 +518,14 @@
       transition: all 0.17s ease;
     }
 
-    .publications li:hover {
+    :root:not(.light-mode) .publications li:hover {
       background: #232428;
+      transform: translateX(4px);
+      border-left-color: var(--discord-blurple);
+    }
+
+    :root.light-mode .publications li:hover {
+      background: #d9dadd;
       transform: translateX(4px);
       border-left-color: var(--discord-blurple);
     }
@@ -612,13 +706,18 @@
   <nav>
     <div class="nav-container">
       <a href="#" class="nav-brand">CHEUNG Tsun Hin</a>
-      <button class="nav-toggle" onclick="toggleNav()">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#research">Research</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
       </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      </div>
     </div>
   </nav>
 
@@ -740,6 +839,33 @@
   </footer>
 
   <script>
+    // Theme toggle functionality
+    function toggleTheme() {
+      const root = document.documentElement;
+      const themeIcon = document.getElementById('theme-icon');
+      
+      if (root.classList.contains('light-mode')) {
+        root.classList.remove('light-mode');
+        themeIcon.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.classList.add('light-mode');
+        themeIcon.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    // Load saved theme on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const themeIcon = document.getElementById('theme-icon');
+      
+      if (savedTheme === 'light') {
+        document.documentElement.classList.add('light-mode');
+        themeIcon.textContent = '🌙';
+      }
+    });
+
     function toggleImage(button) {
       const img = button.parentElement.nextElementSibling;
       if (img.style.display === "none") {
