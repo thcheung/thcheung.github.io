@@ -232,6 +232,36 @@
         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,60 C300,120 400,0 600,60 C800,120 900,0 1200,60 L1200,120 L0,120 Z" fill="%23ffffff"/></svg>');
     }
 
+    .avatar-container {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 2rem;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--white);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .avatar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    :root.light-mode .avatar {
+      border-color: var(--discord-blurple);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    :root.light-mode .avatar:hover {
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    }
+
     header h1 {
       position: relative;
       margin: 0 0 1.5rem 0;
@@ -639,6 +669,11 @@
         padding: 6rem 1.5rem 6rem 1.5rem;
       }
 
+      .avatar {
+        width: 120px;
+        height: 120px;
+      }
+
       header h1 {
         font-size: 2.5rem;
       }
@@ -666,6 +701,11 @@
     }
 
     @media (max-width: 480px) {
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+
       header h1 {
         font-size: 2.25rem;
       }
@@ -722,6 +762,9 @@
   </nav>
 
   <header>
+    <div class="avatar-container">
+      <img src="assets/avator.jpeg" alt="CHEUNG Tsun Hin" class="avatar">
+    </div>
     <h1>CHEUNG Tsun Hin</h1>
     <p>Advancing Research in Machine Learning &amp; AI</p>
     <div class="contact-info">
