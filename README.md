@@ -158,4 +158,4 @@ This project is open source and available under the MIT License.
 
 ---
 
-© 2025 CHEUNG Tsun Hin. All Rights Reserved.
+© 2026 CHEUNG Tsun Hin. All Rights Reserved.
