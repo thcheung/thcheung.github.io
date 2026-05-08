@@ -5,7 +5,7 @@
 layout: home
 ---
 
-Hello, I'm **Tsun-Hin Cheung** 👋, currently a Research Scientist at TCL AI Lab, Hong Kong. My research interests include machine learning, natural language processing, and large language models. I received my PhD degree in Electrical and Electronic Engineering from The Hong Kong Polytechnic University in 2024.
+Hello, I'm **Tsun-Hin Cheung** 👋, currently a Research Scientist at TCL AI Lab, Hong Kong. My research interests include multimedia signal processing, social network analysis, and large language models. I received my PhD degree in Electrical and Electronic Engineering from The Hong Kong Polytechnic University in 2024.
 
 ------
 <!-- 
