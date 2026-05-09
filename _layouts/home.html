@@ -614,6 +614,211 @@
       transform: translateY(0);
     }
 
+    /* ── About Me Grid ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-bio p {
+      font-size: 1.1rem;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin: 0 0 1.25rem 0;
+    }
+
+    .about-bio p:last-child { margin-bottom: 0; }
+
+    .about-bio strong {
+      color: var(--discord-blurple);
+      font-weight: 700;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .stat-card {
+      background: var(--background-tertiary);
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      border: 1px solid rgba(88, 101, 242, 0.18);
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--discord-blurple), var(--discord-fuchsia));
+      transform: scaleX(0);
+      transition: transform 0.25s ease;
+    }
+
+    .stat-card:hover::after { transform: scaleX(1); }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--discord-blurple);
+      box-shadow: 0 6px 20px rgba(88, 101, 242, 0.22);
+    }
+
+    .stat-number {
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: var(--discord-blurple);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      font-family: 'gg sans', sans-serif;
+    }
+
+    .stat-icon {
+      font-size: 1.85rem;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Research Interest Cards ── */
+    .research-section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 1.25rem 0;
+    }
+
+    .research-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .research-card {
+      background: var(--background-tertiary);
+      border-radius: 14px;
+      padding: 1.75rem 1.5rem;
+      border: 1px solid rgba(88, 101, 242, 0.12);
+      transition: all 0.22s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .research-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      transition: opacity 0.22s ease;
+      opacity: 0.6;
+    }
+
+    .research-card:nth-child(1)::before {
+      background: linear-gradient(90deg, #5865F2, #7289da);
+    }
+
+    .research-card:nth-child(2)::before {
+      background: linear-gradient(90deg, #3BA55D, #43b981);
+    }
+
+    .research-card:nth-child(3)::before {
+      background: linear-gradient(90deg, #EB459E, #f472b6);
+    }
+
+    .research-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+      border-color: transparent;
+    }
+
+    .research-card:hover::before { opacity: 1; }
+
+    .research-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.1rem;
+    }
+
+    .research-card:nth-child(1) .research-card-icon { background: rgba(88, 101, 242, 0.15); }
+    .research-card:nth-child(2) .research-card-icon { background: rgba(59, 165, 93, 0.15); }
+    .research-card:nth-child(3) .research-card-icon { background: rgba(235, 69, 158, 0.15); }
+
+    .research-card-icon svg { width: 26px; height: 26px; }
+    .research-card:nth-child(1) .research-card-icon svg { color: #5865F2; }
+    .research-card:nth-child(2) .research-card-icon svg { color: #3BA55D; }
+    .research-card:nth-child(3) .research-card-icon svg { color: #EB459E; }
+
+    .research-card h3 {
+      font-size: 0.975rem;
+      font-weight: 700;
+      color: var(--text-color);
+      margin: 0 0 0.65rem 0;
+      line-height: 1.4;
+    }
+
+    .research-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    .research-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+
+    .research-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 8px;
+      font-weight: 600;
+      background: rgba(88, 101, 242, 0.1);
+      color: var(--discord-blurple);
+    }
+
+    .research-card:nth-child(2) .research-tag {
+      background: rgba(59, 165, 93, 0.1);
+      color: #3BA55D;
+    }
+
+    .research-card:nth-child(3) .research-tag {
+      background: rgba(235, 69, 158, 0.1);
+      color: #EB459E;
+    }
+
+    /* ── Section divider ── */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--light-gray);
+      margin: 2.5rem 0;
+    }
+
     /* Responsive Design */
     @media (max-width: 768px) {
       nav .nav-container {
@@ -698,6 +903,15 @@
       main ul li img {
         max-width: 100%;
       }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .research-cards {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 480px) {
@@ -776,31 +990,85 @@
 
   <main>
     <section class="section" id="research">
+      <!-- About Me -->
       <h2>About Me</h2>
-      <p style="margin:0 0 2rem 0; color:var(--text-secondary); font-size:1rem; line-height:1.7;">I'm a <strong>Research Scientist at TCL AI Lab</strong>, Hong Kong. I received my PhD in Electrical and Electronic Engineering from <strong>The Hong Kong Polytechnic University</strong> in 2024. My research interests include multimedia signal processing, social network analysis, and industrial artificial intelligence.</p>
-      <h2>Research Interests</h2>
-      <table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
-        <thead>
-          <tr style="border-bottom:2px solid var(--discord-blurple);">
-            <th style="text-align:left; padding:0.5rem 1rem 0.5rem 0; color:var(--text-color); font-weight:700;">Area</th>
-            <th style="text-align:left; padding:0.5rem 0; color:var(--text-color); font-weight:700;">Topics</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom:1px solid var(--light-gray);">
-            <td style="padding:0.75rem 1rem 0.75rem 0; color:var(--text-secondary); white-space:nowrap;">Multimedia Signal Processing</td>
-            <td style="padding:0.75rem 0; color:var(--text-muted);">Multimodal classification, image-text fusion, cross-modal attention</td>
-          </tr>
-          <tr style="border-bottom:1px solid var(--light-gray);">
-            <td style="padding:0.75rem 1rem 0.75rem 0; color:var(--text-secondary); white-space:nowrap;">Social Network Analysis</td>
-            <td style="padding:0.75rem 0; color:var(--text-muted);">Rumour detection, veracity assessment, misinformation on social media</td>
-          </tr>
-          <tr>
-            <td style="padding:0.75rem 1rem 0.75rem 0; color:var(--text-secondary); white-space:nowrap;">Industrial Artificial Intelligence</td>
-            <td style="padding:0.75rem 0; color:var(--text-muted);">Anomaly detection, predictive maintenance, materials discovery</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>I'm a <strong>Research Scientist at TCL AI Lab</strong>, Hong Kong, where I work on pushing the boundaries of machine learning and artificial intelligence for real-world industrial applications.</p>
+          <p>I received my <strong>PhD in Electrical and Electronic Engineering</strong> from The Hong Kong Polytechnic University in 2024, where my dissertation focused on multimodal deep learning and social media analysis.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">14+</div>
+            <div class="stat-label">Publications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Yrs of Research</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-label">PhD · PolyU HK</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏢</div>
+            <div class="stat-label">TCL AI Lab</div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- Research Interests -->
+      <p class="research-section-title">Research Interests</p>
+      <div class="research-cards">
+        <div class="research-card">
+          <div class="research-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              <path d="M7 9l3 3 2-2 3 3"/>
+            </svg>
+          </div>
+          <h3>Multimedia Signal Processing</h3>
+          <p>Leveraging deep learning to fuse heterogeneous data sources including vision, text, and audio for holistic understanding.</p>
+          <div class="research-tags">
+            <span class="research-tag">Multimodal Fusion</span>
+            <span class="research-tag">Cross-modal Attention</span>
+            <span class="research-tag">Image-Text</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+          </div>
+          <h3>Social Network Analysis</h3>
+          <p>Building AI systems that detect misinformation, verify claims, and understand how content propagates through online communities.</p>
+          <div class="research-tags">
+            <span class="research-tag">Rumour Detection</span>
+            <span class="research-tag">Fact Verification</span>
+            <span class="research-tag">Misinformation</span>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <div class="research-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3>Industrial Artificial Intelligence</h3>
+          <p>Applying LLMs and vision models to industrial challenges including anomaly detection, predictive maintenance, and materials discovery.</p>
+          <div class="research-tags">
+            <span class="research-tag">Anomaly Detection</span>
+            <span class="research-tag">LLMs for Industry</span>
+            <span class="research-tag">RAG</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="skills">
