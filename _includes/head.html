@@ -5,5 +5,12 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-
+  <script>
+    // Apply dark mode before paint to avoid flash — default is light
+    (function () {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
 </head>
